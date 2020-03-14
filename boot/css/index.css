@@ -1,0 +1,294 @@
+
+.big_container{
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.my_container{
+    width:1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+a,a:hover{
+    color: white;
+    text-decoration: none;
+}
+.my_navsize{
+    font-size: 18px;
+}
+.my_gray{
+    color:rgb(77, 73, 73);
+}
+.my_ml{
+    margin-left:200px;
+    
+}
+.mr-10{
+    margin-right:15rem;
+}
+.nav-hover:hover,.nav-hover:hover>a{
+    background: #007bff;
+    color:white;
+    
+}
+
+#contain1{
+    position: relative;
+}
+#carousel-ul{
+    position:absolute;
+    margin-top:-477px;
+    z-index: 0;
+}
+.w-20{
+    width:16.9rem;
+}
+.my_ul_width{
+    width:18rem;
+}
+.nav-tabs .nav-item{
+    padding-left:2rem;
+    padding-right:2rem;
+}
+.nav-tabs .nav-item a{
+    border:0px;
+}
+.display-blo{
+    display: block;
+}
+.display-none{
+    display: none;
+}
+.img-hover{
+    transition: 1s linear;
+    overflow: hidden !important;
+}
+.img-hover:hover{
+    transform: scale(1.1,1.1);
+    overflow: hidden !important;   
+}
+.my_indicator_style{
+    width:10px !important;
+    height:10px !important;
+    border-radius: 50%;
+    background: #fff;
+}
+.my_indicator_style:active{
+    background: rgb(96, 119, 246);
+}
+.pl-7{
+    padding-left:5rem;
+}
+.my_paih_num_fir{
+    vertical-align: middle;
+    border-radius: 2px;
+    width:30px;
+    height:30px;
+}
+.my_paih_num{
+    vertical-align: middle;
+    border-radius: 2px;
+    width:25px;
+    height:25px;
+}
+.my_paih_text{
+    vertical-align: middle;
+    height:30px;
+}
+.hidden-li{
+    display: none;
+}
+.myfont-sm{
+    font-size:12px;
+    color: #bacfee;
+}
+.myfont-md{
+    font-size:14px;
+    
+}
+.font-gray,.font-gray:hover{
+    color:rgb(194, 189, 189);
+}
+.bg-primary1{
+    background:#2e76db;
+}
+.bg-primary2{
+    background:#3e80db;
+}
+#carousel-ul .bg-primary1:hover{
+    background: #3e80db;
+}
+#course_new{
+    height:645px;
+    
+}
+.media .course-image {
+    width: 250px;
+    height: 160px;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow: hidden;
+}
+.media .course-image img{
+    transition: 0.5s linear;
+}
+.left_course .media:hover img{
+    transform: scale(1.03);
+}
+.left_course .jinqi .media:hover{
+    border:1px solid rgb(209, 207, 207);
+    
+    box-shadow: 2px 2px 2px rgb(240, 237, 237);
+    
+}
+.my_height_course{
+    height:240px;
+}
+
+.my-hiddendiv1{
+position: absolute;
+top:-1px;
+left:287px;
+}
+.p-relative{
+    position: relative;
+}
+.my-hiddendiv2{
+    position: absolute;
+    top:-18px;
+    right:100px;
+    display: none;
+    height:50px !important;
+    background: grey;
+    }
+.p-fixed li:hover .my-hiddendiv2{
+    display: block !important;
+    width:200px !important;
+    height:50px !important;
+}
+#carousel-ul li:hover .my-hiddendiv1{
+    display: block !important;
+}
+
+.wh-200{
+    width:35rem;
+    height:3.5rem;
+    padding-top:12px;
+    padding-left:12px;
+    border:1px solid #2e76db;
+    
+}
+.box-border{
+    box-sizing: border-box;
+}
+.p-contain{
+    width:226px;
+    height:226px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+
+#teacher li{
+    position: relative;
+}
+#teacher li div{
+    position: absolute;
+    top:165px;
+    transition: 0.3s linear;
+}
+#teacher li:hover>div{
+    top:0px;
+}
+.bggray{
+    background-color: rgb(240, 238, 238);
+}
+.my_footer{
+    width:100%;
+    height:310px;
+}
+.myh{
+    height:477px;
+}
+/*堆叠部分*/
+.index{
+    position: relative;
+    display: block;
+    z-index:100;
+}
+.index-0{
+    position: absolute;
+    left:0;
+    
+    
+}
+
+.index-1{
+    position: absolute;
+   
+    left:180px;
+}
+.index-2{
+    position: absolute;
+  
+    left:360px;
+}
+.index-3{
+    position: absolute;
+    
+    left:540px;
+}
+.index-4{
+    position: absolute;
+    
+    left:720px;
+}
+.index-5{
+    position: absolute;
+    
+    left:890px;
+}
+.li-shadow{
+    box-shadow: 1px -2px 2px rgb(114, 113, 113);
+}
+.index-hover:hover{
+    z-index: 100 !important;
+    transform: scale(1.03);
+    transition: all 0.5s linear;
+}
+.mt-10{
+    margin-top: 200px;
+}
+.p-fixed{
+    width:70px;
+    position: fixed;
+    right:10px;
+    top:30%;
+}
+.downto{
+    position: absolute;
+    left:240px;
+    top:12px;
+}
+.d-none{
+    width: 300px;
+	height: 100px;
+	padding:30px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+.zhibo{
+    position: absolute;
+    left:963px;
+    top:105px;
+    z-index: 10;
+}

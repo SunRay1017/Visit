@@ -1,0 +1,12 @@
+.reg{
+    width:500px;
+    background:#fff;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid rgb(231, 228, 228);
+}
+.reg-content-item input:focus{
+    border:1px solid #3775bc;
+    border-top:2px solid #3775bc !important;
+    box-shadow: 1px 1px 1px #b5babe;
+}

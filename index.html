@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>旅游网站</title>
+  <link rel="SHORTCUT ICON" href="favion.ico">
+  <link rel="stylesheet" href="./boot/css/bootstrap.css">
+  <script src="./boot/js/jquery.min.js"></script>
+  <script src="./boot/js/popper.min.js"></script>
+  <script src="./boot/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./boot/css/index.css">
+  <style type="text/css" scoped>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /*防止移动端出现横向滚动 开始*/
+
+    html {
+      overflow-y: scroll;
+    }
+
+    :root {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    :root body {
+      position: absolute;
+    }
+
+    body {
+      width: 100vw;
+      overflow: hidden;
+      margin: 0px;
+    }
+
+    /*防止移动端出现横向滚动 结束*/
+
+    @media (max-width:1017px) {
+      .nav-md_none {
+        display: none;
+      }
+    }
+
+    @media (min-width:1018px) {
+      .nav-lg_none {
+        display: none;
+      }
+    }
+
+    .body_top {
+      background-image: url(./images/bg.jpg);
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      background-size: cover;
+      background-position: center;
+      margin-right: -20px;
+    }
+
+    #bg {
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    #trans {
+      background: rgba(0, 0, 0, 0.7);
+
+    }
+
+    .bg-pink {
+      background: rgb(85, 71, 110);
+    }
+
+    img {
+      font-size: 0px;
+    }
+
+    .top_color {
+      background: rgba(90, 99, 230, 0.4);
+      width: 100%;
+      color: white;
+    }
+
+    .cursor_p {
+      cursor: pointer;
+    }
+
+    .box-border {
+      box-sizing: border-box;
+    }
+
+    .body_menu {
+      background: rgb(252, 249, 249);
+      z-index: 99999;
+      position: fixed;
+      width: 260px;
+      height: 100%;
+
+
+    }
+
+    .body_menu a {
+      color: rgb(56, 56, 56)
+    }
+
+    .menu_nav>ul>li:hover {
+      background: rgb(83, 61, 107);
+    }
+
+    .menu_nav>ul>li:hover a {
+      color: white;
+    }
+
+    .top-font .btn:hover {
+      background: rgb(241, 241, 241);
+    }
+
+    .bg-dis {
+      background: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 100%;
+      display: blcok;
+      padding-top: 90px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .box-border:hover>div>.bg-dis {
+      display: block;
+    }
+  </style>
+</head>
+
+<body style="overflow:-Scroll;overflow-x:hidden">
+  <div class="body_menu collapse" id="collapseExample">
+    <div class="row mt-3 mb-3">
+      <div class="col-6 text-center">
+        <a href="">登录</a>
+      </div>
+      <div class="col-6 text-center">
+        <a href="">注册</a>
+      </div>
+    </div>
+    <div class="menu_nav">
+      <ul class="list-unstyled">
+        <li class="pl-4 pt-2 pb-2">
+          <a href="">首页</a>
+        </li>
+        <li class="pl-4 pt-2 pb-2">
+          <a href="">热门景点</a>
+        </li>
+        <li class="pl-4 pt-2 pb-2">
+          <a href="./H/lytc/lytc.html">旅游套餐</a>
+        </li>
+        <li class="pl-4 pt-2 pb-2">
+          <a href="">关于我们</a>
+        </li>
+        <li class="pl-4 pt-2 pb-2">
+          <a href="">客户反馈</a>
+        </li>
+        <li class="pl-4 pt-2 pb-2">
+          <a href="">联系我们</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="body_top">
+    <div class="top_color">
+      <div class="row nav-md_none">
+        <div class="col-lg-2 ml-5">
+          <img src="./images/logo.png" alt="logo">
+        </div>
+        <div class="col-lg-5 offset-1 ">
+          <ul class="navbar" style="list-style:none;transform:translateY(45px)">
+            <li>
+              <a href="">首页</a>
+            </li>
+            <li>
+              <a href="">热门景点
+              </a>
+            </li>
+            <li>
+              <a href="./H/lytc/lytc.html">旅游套餐
+              </a>
+            </li>
+            <li>
+              <a href="">关于我们
+              </a>
+            </li>
+            <li>
+              <a href="">客户反馈
+              </a>
+            </li>
+            <li>
+              <a href="">联系我们
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-1_5 offset-1" width="100px">
+          <ul class="navbar" style="list-style:none;transform:translateY(45px)">
+            <li class="pr-1">
+              <a href="./H/login/login.html">登录</a>
+            </li>
+
+            <li class="pl-1">
+              <a href="">注册</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row nav-lg_none bg-pink">
+        <div class="col-3 " style="transform:translateY(15px)">
+          <svg data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="cursor_p"
+            t="1575613384963" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1555"
+            width="32" height="32">
+            <path d="M170.666667 796.444444v-113.777777h682.666666v113.777777z m0-227.555555V455.111111h682.666666v113.777778z m0-227.555556V227.555556h682.666666v113.777777z"
+              p-id="1556" fill="#ffffff"></path>
+          </svg>
+        </div>
+        <div class="col-3  " style="margin-left:1.3rem">
+          <img src="./images/logo.png" alt="logo" height="48px" style="display:inline-block;margin-bottom:15px">
+        </div>
+        <div class="col-3  text-center" style="transform:translateY(25px);margin-left:3.5rem">
+          <a href="">
+            <svg t="1575614126849" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5318"
+              width="18" height="18">
+              <path d="M468.114 81.502c-96.13 0-194.35 37.616-267.494 110.76-146.285 146.285-146.285 390.791 0 539.167 146.286 146.285 390.792 146.285 539.168 0 146.285-146.286 146.285-390.792 0-539.168-75.233-73.143-175.543-110.759-271.674-110.759m0 840.098c-117.028 0-234.057-43.886-323.918-133.747-177.633-179.722-177.633-472.294 0-652.016 179.722-179.723 472.294-179.723 649.926 0 179.723 179.722 179.723 472.294 0 649.926C706.351 875.624 585.142 921.6 468.114 921.6"
+                p-id="5319" fill="#ffffff"></path>
+              <path d="M923.69 988.473L756.506 821.29c-20.898-20.898-20.898-54.335 0-73.143 20.898-20.898 54.335-20.898 73.143 0L996.833 915.33c20.898 20.898 20.898 54.334 0 73.142-20.898 22.988-54.335 22.988-73.143 0"
+                p-id="5320" fill="#ffffff"></path>
+            </svg>
+          </a>
+          <a href="">
+            <svg t="1575614253629" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7394"
+              width="18" height="18">
+              <path d="M739.4304 640.3072c-9.9328 13.1072-7.4752 32.0512 5.5296 42.1888 96.1536 74.8544 151.2448 188.3136 151.2448 311.296 0 16.6912 13.4144 30.208 29.7984 30.208 16.384 0 29.7984-13.5168 29.7984-30.208 0-142.0288-63.5904-272.896-174.4896-359.1168C768.6144 624.7424 749.056 627.4048 739.4304 640.3072L739.4304 640.3072 739.4304 640.3072zM97.9968 1024c16.384 0 29.7984-13.5168 29.7984-30.208 0-215.8592 172.3392-391.3728 384.2048-391.3728 163.2256 0 295.936-135.0656 295.936-301.1584C807.936 135.168 675.2256 0 512 0 348.7744 0 216.064 135.168 216.064 301.2608c0 109.9776 60.3136 211.8656 154.9312 264.3968C191.8976 626.9952 68.1984 800.5632 68.1984 993.792 68.1984 1010.4832 81.6128 1024 97.9968 1024L97.9968 1024 97.9968 1024zM512 60.5184c130.3552 0 236.3392 108.032 236.3392 240.7424S642.3552 542.0032 512 542.0032c-130.2528 0-236.2368-108.032-236.2368-240.7424S381.7472 60.5184 512 60.5184L512 60.5184 512 60.5184zM512 60.5184"
+                p-id="7395" fill="#ffffff"></path>
+            </svg>
+          </a>
+          <a href="">
+            <svg t="1575614299111" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8535"
+              width="18" height="18">
+              <path d="M984.60937443 775.69744555H244.19820999c-21.94242333 0-42.52558222-8.54395221-57.86585999-24.0784111-15.3402789-15.53445888-23.88423111-35.92343666-23.69005112-57.86586112l2.71853112-545.25952c0-21.74824334-7.57304889-36.3117989-45.24411334-42.3314011h-0.19417999l-108.74121557-18.64135111c-10.48576-1.74762667-17.67044779-11.84502557-15.92281998-22.33078557 1.74762667-10.48576 11.84502557-17.67044779 22.33078442-15.92282112l108.54703446 18.64135112c51.65207666 8.15559111 77.86647666 35.34089443 77.86647666 80.7791889L201.28426666 694.14153443c0 11.45666333 4.27197667 22.13660445 12.42756779 30.09801558 8.15559111 8.15559111 18.83553223 12.62174777 30.29219555 12.62174777h740.41116445c10.67994112 0 19.41807445 8.73813333 19.41807331 19.41807445s-8.54395221 19.41807445-19.22389333 19.41807332z"
+                fill="#ffffff" p-id="8536"></path>
+              <path d="M929.26786332 664.23770112l-685.65219556-2.13598891c-21.55406222-0.19418112-41.74885888-8.54395221-56.89495665-23.88423111-15.14609778-15.3402789-23.30168889-35.53507555-23.30168889-57.08913777l2.13598777-402.73085554L941.30707 236.26334777c35.14671445 1.35926557 62.72037888 29.90383445 62.72037888 65.0505489V589.67229667c0 41.16631666-33.59326777 74.56540445-74.75958556 74.56540445zM244.00403 623.26556445l685.45801444 2.13598776c19.80643555 0 35.92343666-16.1170011 35.92343666-35.72925554V301.31389667c0-14.17519445-11.26248334-25.8260389-25.43767666-26.2144h-0.77672334l-734.58574222-54.75896888-1.74762667 361.17617778c0 11.06830222 4.27197667 21.55406222 12.03920669 29.51547221 7.37886777 7.76723001 17.86462777 12.23338667 29.1271111 12.23338667z"
+                fill="#ffffff" p-id="8537"></path>
+              <path d="M319.54033778 839.77708999m-72.42941668 0a72.42941667 72.42941667 0 1 0 144.85883335 0 72.42941667 72.42941667 0 1 0-144.85883335 0Z"
+                fill="#ffffff" p-id="8538"></path>
+              <path d="M319.54033778 931.62458112c-50.68117333 0-91.84748999-41.16631666-91.84749-91.84749113s41.16631666-91.84748999 91.84749-91.84748999c50.68117333 0 91.84748999 41.16631666 91.84748998 91.84748999s-41.16631666 91.84748999-91.84748998 91.84749113z m0-144.85883335c-29.32129223 0-53.01134222 23.69004999-53.01134223 53.01134222s23.69004999 53.01134222 53.01134223 53.01134222 53.01134222-23.69004999 53.01134222-53.01134222-23.69004999-53.01134222-53.01134222-53.01134222z"
+                fill="#ffffff" p-id="8539"></path>
+              <path d="M875.4797989 839.77708999m-72.42941668 0a72.42941667 72.42941667 0 1 0 144.85883221 0 72.42941667 72.42941667 0 1 0-144.85883221 0Z"
+                fill="#ffffff" p-id="8540"></path>
+              <path d="M875.4797989 931.62458112c-50.68117333 0-91.84748999-41.16631666-91.84749114-91.84749113s41.16631666-91.84748999 91.84749114-91.84748999 91.84748999 41.16631666 91.84748998 91.84748999-41.16631666 91.84748999-91.84748998 91.84749113z m0-144.85883335c-29.32129223 0-53.01134222 23.69004999-53.01134223 53.01134222s23.69004999 53.01134222 53.01134223 53.01134222 53.01134222-23.69004999 53.01134222-53.01134222-23.69004999-53.01134222-53.01134222-53.01134222z"
+                fill="#ffffff" p-id="8541"></path>
+              <path d="M758.97135445 405.00641223H363.23100444c-10.67994112 0-19.41807445-8.73813333-19.41807445-19.41807445s8.73813333-19.41807445 19.41807445-19.41807445h395.74035001c10.67994112 0 19.41807445 8.73813333 19.41807331 19.41807445s-8.73813333 19.41807445-19.41807331 19.41807445zM758.97135445 516.66033778H363.23100444c-10.67994112 0-19.41807445-8.73813333-19.41807445-19.41807445s8.73813333-19.41807445 19.41807445-19.41807332h395.74035001c10.67994112 0 19.41807445 8.73813333 19.41807331 19.41807332s-8.73813333 19.41807445-19.41807331 19.41807445z"
+                fill="#ffffff" p-id="8542"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="top-font">
+        <div class="row mt-5 ">
+          <div class="col-12 text-center">
+            <img src="./images/font-img.png" alt="">
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-center h1 font-weight-bold">AFFORDABLE PARIS TOURS</div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center h6 ">CITY TOURS / TOUR TICKETS / TOUR GUIDES</div>
+        </div>
+        <div class="row mt-3 ">
+          <div class="col-12 text-center ">
+            <div class="btn btn-white pl-5 pr-5 pt-2 pb-2 mb-5">VIEW TOURS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 旅游景点展示 -->
+  <div style="background:white">
+    <div class="trav-des container pt-5 pb-5">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h6 style="font-size:28px;color:grey;font-weight:lighter">巴黎旅游景点</h6>
+          <p style="color:grey">Quisque at tortor a libero posuer</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-white rounded-0 pl-5 pr-5 mt-1 " style="border:1px solid #8e8e8e;color:#8e8e8e;font-size:12px">第3景区</button>
+        </div>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-white rounded-0 pl-5 pr-5 mt-1 " style="border:1px solid #8e8e8e;color:#8e8e8e;font-size:12px">第3景区</button>
+        </div>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-white rounded-0 pl-5 pr-5 mt-1 " style="border:1px solid #8e8e8e;color:#8e8e8e;font-size:12px">第5景区</button>
+        </div>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-white rounded-0 pl-5 pr-5 mt-1 " style="border:1px solid #8e8e8e;color:#8e8e8e;font-size:12px">第8景区</button>
+        </div>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-white rounded-0 pl-5 pr-5 mt-1 " style="border:1px solid #8e8e8e;color:#8e8e8e;font-size:12px">第7景区</button>
+        </div>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-white rounded-0 pl-5 pr-5 mt-1 " style="border:1px solid #8e8e8e;color:#8e8e8e;font-size:12px">第9景区</button>
+        </div>
+      </div>
+      <div class="row mt-5 p-0">
+        <div class="col-lg-4 text-center box-border mb-3">
+          <a href="" style="color:grey">
+            <div style="box-shadow:3px 3px 3px rgb(231, 231, 231)">
+              <img src="./images/lfg.jpg" alt="" class="w-100">
+              <div class="pb-2 pt-2">
+                <p class="m-1">卢浮宫</p>
+                <p style="font-size:12px;color:grey">客户评分：☆☆☆☆☆</p>
+              </div>
+            </div>
+          </a>
+
+          <div></div>
+        </div>
+        <div class="col-lg-4 text-center box-border mb-3">
+          <a href="" style="color:grey">
+            <div style="box-shadow:3px 3px 3px rgb(231, 231, 231)">
+              <img src="./images/lfg.jpg" alt="" class="w-100">
+              <div class="pb-2 pt-2">
+                <p class="m-1">卢浮宫</p>
+                <p style="font-size:12px;color:grey">客户评分：☆☆☆☆☆</p>
+              </div>
+            </div>
+          </a>
+
+          <div></div>
+        </div>
+        <div class="col-lg-4 text-center box-border mb-3">
+          <a href="" style="color:grey">
+            <div style="box-shadow:3px 3px 3px rgb(231, 231, 231)">
+              <img src="./images/lfg.jpg" alt="" class="w-100">
+              <div class="pb-2 pt-2">
+                <p class="m-1">卢浮宫</p>
+                <p style="font-size:12px;color:grey">客户评分：☆☆☆☆☆</p>
+              </div>
+            </div>
+          </a>
+
+          <div></div>
+        </div>
+        <div class="col-lg-4 text-center box-border mb-3">
+          <a href="" style="color:grey">
+            <div style="box-shadow:3px 3px 3px rgb(231, 231, 231)">
+              <img src="./images/lfg.jpg" alt="" class="w-100">
+              <div class="pb-2 pt-2">
+                <p class="m-1">卢浮宫</p>
+                <p style="font-size:12px;color:grey">客户评分：☆☆☆☆☆</p>
+              </div>
+            </div>
+          </a>
+
+          <div></div>
+        </div>
+        <div class="col-lg-4 text-center box-border mb-3">
+          <a href="" style="color:grey">
+            <div style="box-shadow:3px 3px 3px rgb(231, 231, 231)">
+              <img src="./images/lfg.jpg" alt="" class="w-100">
+              <div class="pb-2 pt-2">
+                <p class="m-1">卢浮宫</p>
+                <p style="font-size:12px;color:grey">客户评分：☆☆☆☆☆</p>
+              </div>
+            </div>
+          </a>
+
+          <div></div>
+        </div>
+        <div class="col-lg-4 text-center box-border mb-3">
+          <a href="" style="color:grey">
+            <div style="box-shadow:3px 3px 3px rgb(231, 231, 231)">
+              <img src="./images/lfg.jpg" alt="" class="w-100">
+              <div class="pb-2 pt-2">
+                <p class="m-1">卢浮宫</p>
+                <p style="font-size:12px;color:grey">客户评分：☆☆☆☆☆</p>
+              </div>
+            </div>
+          </a>
+
+          <div></div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-danger pl-5 pr-5 rounded-0">More →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部图 -->
+  <div class="row">
+    <div class="col-12">
+      <img id="bg" src="./images/fixed.jpg" alt="">
+    </div>
+  </div>
+  <div id="trans">
+    <div class="row pt-5">
+      <div class="col-12 text-center h1 pt-5 " style="color:white">
+        为您开启一段愉快的旅程
+      </div>
+    </div>
+    <div class="row pb-5">
+      <div class="col-12 text-center pb-5" style="color:white">
+        CITY TOURS / TOUR TICKETS / TOUR GUIDES
+      </div>
+    </div>
+  </div>
+  <!-- 欢迎了解 -->
+  <div style="background:white" class="pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 ">
+          <img src="./images/liaojie.png" class="w-100">
+        </div>
+        <div class="col-lg-6">
+          <h4>欢迎关注......了解更多旅游资讯</h4>
+          <p class="mt-5" style="font-size:14px">当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户， 还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。</p>
+          <a class="btn btn-danger mt-5" href="">VIEW TOURS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <div style="background:white" class="pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h6>联系我们</h6>
+          <p>/contact</p>
+        </div>
+        <div class="col-lg-4">
+          巴黎旅游定制
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <div class="row " style="font-size:14px;color:grey">
+            <div class="col-lg-6">
+              <ul class="list-unstyled">
+                <li>地址：江苏省苏州市园区金鸡湖大道路000号</li>
+                <li>邮编：100000</li>
+                <li>电话：400-888-8888</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled">
+                <li>电话：400-888-8888</li>
+                <li>手机：188-6666-5188</li>
+                <li>传真：000-66668888</li>
+                <li>邮箱：website@qq.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img src="./images/二维码.jpg" alt="" class="w-25">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    //用这种方式可以避免跨域问题
+    $.ajax({
+      type: "get",
+      url: "https://api.asilu.com/bg/",
+      data: "",
+      dataType: "jsonp",
+      crossDomain: true,
+      jsonpCallback: "jsonpCallbackFun",
+      jsonp: "callback",
+      success: function (data) {
+        console.log(data)
+      },
+    });
+  </script>
+</body>
+
+</html>

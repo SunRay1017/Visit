@@ -1,0 +1,115 @@
+.course-ban{
+    position: relative;
+}
+.course-ban img{
+    position: absolute;
+    right:0;
+    top:85px;
+}
+.my-hei{
+    height:250px !important;
+}
+.bg-g{
+    background-color: #E8F7EC;
+}
+.mt-7{
+    margin-top:5rem;
+}
+.text-course{
+    color:rgb(97, 99, 97);
+}
+.course-tul{
+    position: absolute;
+    bottom:-103px;
+}
+.ban-border{
+    border:1px solid rgb(216, 218, 216);
+}
+.course-left-li{
+    border:1px solid rgb(230, 228, 228);
+    position: relative;
+}
+.course-left-li:hover{
+    box-shadow: 0px 1px 1px 1px rgb(209, 206, 206);
+}
+.course-left-li:hover>a{
+    color:rgb(54, 85, 223) !important;
+}
+.course-left-li:not(:first-child){
+    border-top:0px;
+}
+.course-left-liborder{
+    border-left: 3px solid rgb(54, 85, 223);
+    
+}
+.pt-m{
+    padding-top:0.75rem;
+}
+.pb-m{
+    padding-bottom:0.75rem;
+}
+.course-hidden{
+    position: absolute;
+    margin-top:-34px;
+    left:270px;
+}
+.course-left-li:hover .d-none{
+    display: block !important;
+    position: absolute;
+    left:170px;
+    z-index: 100;
+
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.wh-100{
+    width:20rem;
+    padding-top:12px;
+    padding-left:12px;
+    padding-bottom: 12px;
+    border:1px solid #cdd0d3;
+    
+}
+.media-size{
+    width:220px !important;
+    height:125px !important;
+}
+.dropdown-hover:hover{
+    background: #0aA1ED;
+}
+
+.btn-group .dropdown-width{
+    width:35px !important;
+    border-radius: 0px !important;
+}
+.dropdown-mymenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    width: 105px;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
+  .dropdown-mymenu .dropdown-hover:hover>a{
+    background: rgb(13, 146, 212);
+    color: white !important;
+}
+.btn-free{
+    border:1px solid grey !important;
+    background: blue;
+}

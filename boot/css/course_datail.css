@@ -1,0 +1,90 @@
+
+.bg-nice{
+    background: #2d3339;
+    padding-top: 3.5rem;
+    padding-left:2.5rem;
+}
+.course-summary-num{
+    
+    color:#989fa5;
+    
+    padding-right: 40px;
+    width: 235px;
+}
+.course-pborder-bottom{
+    border-bottom: 1px solid #989fa5;
+}
+.span-1{
+    font-size: 22px;
+    color: white;
+}
+.span-2{
+    color:#306ecb;
+    font-size: 36px;
+}
+.p-7{
+    padding:80px 105px;
+}
+.bg-hh{
+    height:171px;
+    background: #6c757d;
+}
+.w-10{
+    
+    width: 15%;
+    
+}
+.care1:hover p{
+    color:#306ecb;
+}
+.care2:hover p{
+    color:#306ecb;
+}
+.box-shadow{
+    box-shadow: 2px 2px 2px  #989fa5;
+}
+.border-top-course{
+    border-top: 2px solid #306ecb;
+}
+.circle-li{
+    border:2px solid grey;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+}
+.ml-15{
+    margin-left: 30rem;
+}
+.ml-10{
+    margin-top:0;
+    margin-left:21.5rem;
+}
+.offset-15{
+    margin-left: 65%;
+}
+.circle-after::after{
+    content: "";
+    display: block;
+    background: grey;
+    height:30px;
+    width:2px;
+    margin-left: 7px;
+    margin-top: 16px;
+}
+.bg-img{
+    background-image: url('img/播放.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.color-gray{
+    color:#989fa5;
+}
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right:0.55rem;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    }
